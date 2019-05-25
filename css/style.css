@@ -1,0 +1,381 @@
+ /* Google fonts  */
+ @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+ /* --------- */
+ 
+ .wrapper{
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+ /* Header and logo */
+.header{
+  display:flex;
+  
+}
+
+.header  h1{
+  font-size: 60px;
+  margin-left: 60px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header img{
+  height: 100px;
+  width: 100px;
+}
+
+.hr-tag{
+ height: 5px;
+ color: #d2dbe4;
+ background-color: #d2dbe4;
+ border: none;
+}
+
+.fa-bars{
+ display: none;
+}
+
+/* navbar */
+.list-items{
+  display:  flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: rgb(63, 51, 51);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+.list-items li a {
+  text-decoration: none;
+  color: rgb(12, 12, 12);
+}
+
+/* Hero section */
+ 
+.hero-image{
+  display:flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.hero-image img{
+  height: 500px;
+  width: 100%;
+ 
+}
+
+.hero-image .hero-content{
+ 
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  background: #d2dbe4;
+  width: 100%;
+   padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+/* News section */
+.top-news{
+  margin-top: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+.news-header-top{
+ display: flex;
+ justify-content: space-between
+}
+
+.news-header-top p a{
+ text-decoration: none;
+ font-size: 20px
+}
+.news-header-top p{
+ padding-top: 10px;
+}
+
+.top-news ul{
+ margin-left: -35px;
+}
+.top-news ul li{
+list-style:  none;
+font-family: 'Montserrat', sans-serif;
+
+}
+
+/* Table section */
+
+.table-container table {
+width: 100%;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+
+}
+
+.table-heading{
+font-size: 20px;
+color: rgb(71, 68, 68)
+}
+.table-container table .table-heading td{
+padding: 10px;
+
+}
+.table-container table .normal-row td{
+padding: 10px;
+}
+.align-left{
+text-align: left;
+}
+
+/* Weather */
+.weather{
+  margin-top: 30px;
+ font-family: 'Montserrat', sans-serif;
+  
+}
+ 
+.weather .temperature{
+ display: flex;
+}
+
+.temp-v{
+ font-size: 30px;
+ font-family: 'Montserrat', sans-serif;
+}
+
+.temp-C{
+font-size: 20px;
+font-family: 'Montserrat', sans-serif;
+
+}
+
+.daily-temperature{
+  display: flex;
+  justify-content: space-around;
+}
+
+.temp-mon, .temp-tues, .temp-wed, .temp-thu, .temp-fri{
+font-family: 'Montserrat', sans-serif;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-image{
+  height: 90px;
+  width: auto;
+}
+ 
+
+/* Latest News */
+
+.latest-news{
+font-family: 'Montserrat', sans-serif;
+  
+}
+.latest-news-head{
+  display: flex;
+  justify-content: space-between;
+}
+.latest-news-head p {
+  padding-top: 10px;
+  font-size:16px;
+}
+ 
+.latest-news-head p a {
+   text-decoration: none;
+
+}
+
+.image-size-float{
+  height: 90px;
+  margin-right: 20px;
+  width: auto;
+  float:left;
+}
+
+
+.news-latest-each{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+/* footer */
+.footer{
+  margin-top: 20px;
+  border: 1px solid black
+}
+.footer-item{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+
+ 
+}
+
+.hidden-div{
+  display: none;
+}
+
+/* Tablet view */
+
+
+
+@media (max-width:800px){
+  .header img{
+    height: 90px;
+    width: 90px;
+  }
+  .header h1{
+    font-size: 45px;
+    margin-left: 25px;
+  }
+
+  .tab-view{
+    display: flex;
+    flex-wrap: wrap
+  }
+  .hero{
+   width: 50%;
+     order: 1;
+  }
+  .top-news{
+    width: 100%;
+    order: 3;
+  }
+   .hero-content h2{
+     font-size: 18px;
+   }
+   .hero-content p{
+     font-size: 12px;
+   }
+  .table-container{
+   width: 100%;
+   order: 4;
+  }
+  .weather{
+   width: 48%;
+   order: 2;
+   margin-left: 10px;   
+  }
+  .weather-image{
+    height: 50px;
+    width: auto;
+  }
+   .table-container table{
+    border-collapse: collapse;
+     
+   }
+  .table-container table .table-heading td{
+    padding: 8px;
+   
+  }
+
+  .table-container table .table-heading{
+    background: rgb(39, 39, 170);
+    color: white;
+    border-collapse: collapse;
+    
+  }
+  .table-container table .normal-row td{
+    padding: 10px;
+  }
+  .table-container table .normal-row:nth-child(odd){
+    background: #eee;
+  }
+  .table-container table .normal-row:nth-child(even){
+    background: #ddd;
+  }
+  .fa-bars{
+    display: none;
+  }
+}
+
+/* Mobile view */
+
+@media (max-width: 576px){
+  .header{
+    justify-content: space-between
+  }
+  .header  h1{
+    margin-left: -40px;
+  }
+  .fa-bars{
+    display: block;
+    padding-top: 15px;
+    font-size: 20px;
+  }
+ .navbar{
+   display: none;
+ } 
+ .hero{
+   margin-top: 20px;
+ }
+ .header img{
+   height: 40px;
+   width: 40px;
+   width: 15%;
+ }
+ .header h1{
+   font-size: 20px;
+   margin-left: 2px;
+   width: 70%
+ }
+
+ .tab-view{
+   display: flex;
+   flex-wrap: wrap
+ }
+ .hero{
+  width: 100%;
+    order: 1;
+ }
+ .top-news{
+   width: 100%;
+   order: 2;
+ }
+
+ .table-container{
+  width: 100%;
+  order: 3;
+ }
+ .weather{
+  width: 100%;
+  order: 4;
+  
+ }
+
+ .hero-image .hero-content{
+   opacity: 0.8;
+ }
+ .table-container table{
+   border-collapse: collapse;
+   font-size: 12px;
+  }
+ .table-container table .table-heading td{
+   padding: 10px;
+  
+ }
+ .table-container table .normal-row td{
+   padding: 10px;
+ }
+ .footer-item{
+   display: flex;
+   justify-content: flex-start;
+ }
+ .footer-item li{
+  padding: 0 10px;
+ }
+} 
+
+
+
